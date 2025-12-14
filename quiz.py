@@ -24,11 +24,17 @@ def q_1():
         print(f"{i}. {opt}")
     print()
     choice1=int(input("Enter your choice:"))
-    if options1[choice1-1]==correct_ans1:
+    if choice1 <1 or choice1 > len(options1):
+        print("Invalid option selected")
+        print()
+        q_1()
+        return
+    elif options1[choice1-1]==correct_ans1:
         score+=5
         time.sleep(0.5)
         print("You scored 5 points")
         print()
+    
     else:
         score-=2
         time.sleep(1)
@@ -51,7 +57,12 @@ def q_2():
         print(f"{i}. {opt}")
     print()
     choice2=int(input("Enter your choice:"))
-    if options2[choice2-1]==correct_ans2:
+    if choice2 <1 or choice2 > len(options2):
+        print("Invalid option selected")
+        print()
+        q_2()
+        return
+    elif options2[choice2-1]==correct_ans2:
         score+=5
         time.sleep(0.5)
         print("You scored 5 points")
@@ -78,7 +89,12 @@ def q_3():
         print(f"{i}. {opt}")
     print()
     choice3=int(input("Enter your choice:"))
-    if options3[choice3-1]==correct_ans3:
+    if choice3 <1 or choice3 > len(options3):
+        print("Invalid option selected")
+        print()
+        q_3()
+        return
+    elif options3[choice3-1]==correct_ans3:
         score+=5
         time.sleep(0.5)
         print("You scored 5 points")
@@ -105,7 +121,12 @@ def q_4():
         print(f"{i}. {opt}")
     print()
     choice4=int(input("Enter your choice:"))
-    if options4[choice4-1]==correct_ans4:
+    if choice4 <1 or choice4 > len(options4):
+        print("Invalid option selected")
+        print()
+        q_4()
+        return
+    elif options4[choice4-1]==correct_ans4:
         score+=5
         time.sleep(0.5)
         print("You scored 5 points")
@@ -132,7 +153,12 @@ def q_5():
         print(f"{i}. {opt}")
     print()
     choice5=int(input("Enter your choice:"))
-    if options5[choice5-1]==correct_ans5:
+    if choice5 <1 or choice5 > len(options5):
+        print("Invalid option selected")
+        print()
+        q_5()
+        return
+    elif options5[choice5-1]==correct_ans5:
         score+=5
         time.sleep(0.5)
         print("You scored 5 points")
@@ -161,7 +187,12 @@ def q_6():
         print(f"{i}. {opt}")
     print()
     choice6=int(input("Enter your choice:"))
-    if options6[choice6-1]==correct_ans6:
+    if choice6 <1 or choice6 > len(options6):
+        print("Invalid option selected")
+        print()
+        q_6()
+        return
+    elif options6[choice6-1]==correct_ans6:
         score+=5
         time.sleep(0.5)
         print("You scored 5 points")
@@ -193,7 +224,12 @@ def q_7():
     for i,opt in enumerate(options7,start=1):
         print(f"{i}. {opt}")
     choice7=int(input("Enter your choice:"))
-    if options7[choice7-1]==correct_ans7:
+    if choice7 <1 or choice7 > len(options7):
+        print("Invalid option selected")
+        print()
+        q_7()
+        return
+    elif options7[choice7-1]==correct_ans7:
         score+=5
         time.sleep(0.5)
         print("You scored 5 points")
@@ -222,7 +258,12 @@ def q_8():
     for i,opt in enumerate(options8,start=1):
         print(f"{i}. {opt}")
     choice8=int(input("Enter your choice:"))
-    if options8[choice8-1]==correct_ans8:
+    if choice8 <1 or choice8 > len(options8):
+        print("Invalid option selected")
+        print()
+        q_8()
+        return
+    elif options8[choice8-1]==correct_ans8:
         score+=5
         time.sleep(0.5)
         print("You scored 5 points")
@@ -252,7 +293,12 @@ def q_9():
     for i,opt in enumerate(options9,start=1):
         print(f"{i}. {opt}")
     choice9=int(input("Enter your choice:"))
-    if options9[choice9-1]==correct_ans9:
+    if choice9 <1 or choice9 > len(options9):
+        print("Invalid option selected")
+        print()
+        q_9()
+        return
+    elif options9[choice9-1]==correct_ans9:
         score+=5
         time.sleep(0.5)
         print("You scored 5 points")
@@ -285,7 +331,12 @@ def q_10():
         print(f"{i}. {opt}")
     print()
     choice10=int(input("Enter your choice:"))
-    if options10[choice10-1]==correct_ans10:
+    if choice10 <1 or choice10 > len(options10):
+        print("Invalid option selected")
+        print()
+        q_10()
+        return
+    elif options10[choice10-1]==correct_ans10:
         score+=5
         time.sleep(0.5)
         print("You scored 5 points")
