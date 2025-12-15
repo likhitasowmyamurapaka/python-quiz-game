@@ -10,8 +10,12 @@ a=print("Let's check your IQ")
 print()
 time.sleep(1)
 score=0
+correct=0
+wrong=0
 def q_1():
     global score
+    global correct
+    global wrong
     q1="What is the output of type(3/2) in Python 3?"
     print("Your first Question:-")
     time.sleep(1)
@@ -32,19 +36,22 @@ def q_1():
     elif options1[choice1-1]==correct_ans1:
         score+=5
         time.sleep(0.5)
+        correct+=1
         print("You scored 5 points")
         print()
-    
     else:
         score-=2
         time.sleep(1)
         print(f"You selected the wrong answer, Correct answer:{correct_ans1}")
+        wrong+=1
         print()
     time.sleep(1)
     q_2()
     
 def q_2():
     global score
+    global correct
+    global wrong
     q2='What will print("5"*3)?'
     print("Your second Question:-")
     time.sleep(1)
@@ -66,17 +73,21 @@ def q_2():
         score+=5
         time.sleep(0.5)
         print("You scored 5 points")
+        correct+=1
         print()
     else:
         score-=2
         time.sleep(1)
         print(f"You selected the wrong answer, Correct answer:{correct_ans2}")
+        wrong+=1
         print()
     time.sleep(1)
     q_3()
     
 def q_3():
     global score
+    global correct
+    global wrong
     q3='What is the len({"a":1,"b":2,"c":3})?'
     print("Your third Question:-")
     time.sleep(1)
@@ -98,17 +109,21 @@ def q_3():
         score+=5
         time.sleep(0.5)
         print("You scored 5 points")
+        correct+=1
         print()
     else:
         score-=2
         time.sleep(1)
         print(f"You selected the wrong answer, Correct answer:{correct_ans3}")
+        wrong+=1
         print()
     time.sleep(1)
     q_4()
 
 def q_4():
     global score
+    global correct
+    global wrong
     q4="What is the output of bool([])?"
     print("Your fourth Question:-")
     time.sleep(1) 
@@ -130,17 +145,21 @@ def q_4():
         score+=5
         time.sleep(0.5)
         print("You scored 5 points")
+        correct+=1
         print()
     else:
         score-=2
         time.sleep(1)
         print(f"You selected the wrong answer, Correct answer:{correct_ans4}")
+        wrong+=1
         print()
     time.sleep(1)
     q_5()
 
 def q_5():
     global score
+    global correct
+    global wrong
     q5="Which statement skips the current iteration of a loop?"
     print("Your fifth Question:-")
     time.sleep(1)
@@ -162,17 +181,21 @@ def q_5():
         score+=5
         time.sleep(0.5)
         print("You scored 5 points")
+        correct+=1
         print()
     else:
         score-=2
         time.sleep(1)
         print(f"You selected the wrong answer, Correct answer:{correct_ans5}")
+        wrong+=1
         print()
     time.sleep(1)
     q_6()
 
 def q_6():
     global score
+    global correct
+    global wrong
     q6='''
         def add(x, y=5):
             return x + y
@@ -196,17 +219,21 @@ def q_6():
         score+=5
         time.sleep(0.5)
         print("You scored 5 points")
+        correct+=1
         print()
     else:
         score-=2
         time.sleep(1)
         print(f"You selected the wrong answer, Correct answer:{correct_ans6}")
+        wrong+=1
         print()
     time.sleep(1)
     q_7()
 
 def q_7():
     global score
+    global correct
+    global wrong
     q7='''
         x=10
         if x>5:
@@ -233,17 +260,21 @@ def q_7():
         score+=5
         time.sleep(0.5)
         print("You scored 5 points")
+        correct+=1
         print()
     else:
         score-=2
         time.sleep(1)
         print(f"You selected the wrong answer, Correct answer:{correct_ans7}")
+        wrong+=1
         print()
     time.sleep(1)
     q_8()
 
 def q_8():
     global score
+    global correct
+    global wrong
     q8='''
         t = (1, 2, [3, 4])
         t[2][0] = 99
@@ -267,17 +298,21 @@ def q_8():
         score+=5
         time.sleep(0.5)
         print("You scored 5 points")
+        correct+=1
         print()
     else:
         score-=2
         time.sleep(1)
         print(f"You selected the wrong option, Correct answer:{correct_ans8}")
+        wrong+=1
         print()
     time.sleep(1)
     q_9()
 
 def q_9():
     global score
+    global correct
+    global wrong
     q9='''
           for i in range(3):
             print(i, end="-")
@@ -302,17 +337,21 @@ def q_9():
         score+=5
         time.sleep(0.5)
         print("You scored 5 points")
+        correct+=1
         print()
     else:
         score-=2
         time.sleep(1)
         print(f"You selected the wrong answer, Correct answer:{correct_ans9}")
+        wrong+=1
         print()
     time.sleep(1)
     q_10()
 
 def q_10():
     global score
+    global correct
+    global wrong
     q10='''What is the output
         x = 5
         def f():
@@ -340,13 +379,19 @@ def q_10():
         score+=5
         time.sleep(0.5)
         print("You scored 5 points")
+        correct+=1
         print()
     else:
         score-=2
         time.sleep(1)
         print(f"You selected the wrong answer, Correct answer:{correct_ans10}")
+        wrong+=1
         print()
 
 q_1()
 time.sleep(1)
+print("Analysis:-")
+time.sleep(1.5)
+print(f"Total correct: {correct}  Total Wrong: {wrong}")
+time.sleep(1.5)
 print(f"Final score of {user_name}:",score)
