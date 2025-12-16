@@ -36,8 +36,8 @@ def q_1():
     elif options1[choice1-1]==correct_ans1:
         score+=5
         time.sleep(0.5)
-        correct+=1
         print("You scored 5 points")
+        correct+=1
         print()
     else:
         score-=2
@@ -394,4 +394,6 @@ print("Analysis:-")
 time.sleep(1.5)
 print(f"Total correct: {correct}  Total Wrong: {wrong}")
 time.sleep(1.5)
+print()
 print(f"Final score of {user_name}:",score)
+time.sleep(1.5)
